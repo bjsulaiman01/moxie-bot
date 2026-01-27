@@ -1,7 +1,7 @@
 {
   "name": "moxie-bot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A modular, self-hosted Discord bot built with TypeScript, Discord.js, and PostgreSQL.",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
@@ -9,9 +9,9 @@
     "start": "node dist/index.js",
     "deploy": "ts-node src/deploy-commands.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["discord", "bot", "typescript", "postgresql"],
+  "author": "McGee Labs",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "discord.js": "^14.25.1",
