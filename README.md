@@ -13,15 +13,13 @@
 
 <p>
   <strong>Calm. Reliable. Alive.</strong><br/>
-  Disciplined tooling for automation and operations.
+  Disciplined automation tooling.
 </p>
 
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/version-v0.1.0-2563EB?style=flat-square&labelColor=0F172A" />
   <img src="https://img.shields.io/badge/node-%3E%3D18-22C55E?style=flat-square&labelColor=0F172A" />
-  <img src="https://img.shields.io/badge/typescript-2563EB?style=flat-square&labelColor=0F172A" />
-  <img src="https://img.shields.io/badge/discord.js-v14-2563EB?style=flat-square&labelColor=0F172A" />
   <img src="https://img.shields.io/github/license/McGeeLabs/moxie-bot?style=flat-square&labelColor=0F172A&color=2563EB" />
   <a href="https://github.com/sponsors/McGeeLabs">
     <img src="https://img.shields.io/badge/sponsor-GitHub-2563EB?style=flat-square&labelColor=0F172A" />
@@ -29,6 +27,7 @@
 </p>
 
 </div>
+
 
 ---
 
