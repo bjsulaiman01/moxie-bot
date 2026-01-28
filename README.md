@@ -4,9 +4,9 @@
 <!-- Logo -->
 <picture>
   <!-- Dark mode -->
-  <source media="(prefers-color-scheme: dark)" srcset="./branding/moxie-mark-dark.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./branding/moxie-repo-banner.png">
   <!-- Light mode -->
-  <img alt="Moxie" src="./branding/moxie-mark-light.png" width="96" height="96">
+  <img alt="Moxie" src="./branding/moxie-repo-banner.png">
 </picture>
 
 <h1>Moxie</h1>
@@ -27,6 +27,10 @@
     <img src="https://img.shields.io/badge/sponsor-GitHub-2563EB?style=for-the-badge&labelColor=0F172A" />
   </a>
 </p>
+
+</div>
+
+---
 
 **Moxie** is a modular, self-hosted Discord bot built with **TypeScript**, **Discord.js**, and **PostgreSQL**.
 
