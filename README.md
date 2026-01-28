@@ -6,7 +6,7 @@
   <!-- Dark mode -->
   <source media="(prefers-color-scheme: dark)" srcset="./branding/moxie-mark-dark.png">
   <!-- Light mode -->
-  <img alt="Moxie" src="./branding/moxie-mark-light.png">
+  <img alt="Moxie" src="./branding/moxie-mark-light.png" width="128" height="128">
 </picture>
 
 <h1>Moxie</h1>
